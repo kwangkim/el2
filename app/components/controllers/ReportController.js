@@ -8,7 +8,7 @@
 angular.module('QCC')
 
 // Controller definition for this module
-.controller('AboutController', ['$scope', function($scope) {
+.controller('ReportController', ['$scope', function($scope) {
 
 	// Just a housekeeping.
 	// In the init method we are declaring all the

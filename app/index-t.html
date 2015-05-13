@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="QCC" class="no-js"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>E learning institute</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://www.qcc.cuny.edu/_common/css/qcc-font-osr.css" rel="stylesheet" type="text/css"/>
+    <link href="http://www.qcc.cuny.edu/_common/css/main4b.css" rel="stylesheet" type="text/css"/>
+    <link href="http://www.qcc.cuny.edu/_common/css/style.css" rel="stylesheet" type="text/css"/>
+    <!--<link rel="stylesheet" href="resources/css/app.css">-->
+    <script src="http://www.qcc.cuny.edu/_common/javascript/jquery.js" type="text/javascript"></script>
+    <script src="http://www.qcc.cuny.edu/_common/javascript/qcc-menu-dropdown.js" type="text/javascript"></script>
+    <script src="resources/bower/angular/angular.js"></script>
+    <script src="resources/bower/angular-route/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <script src="components/controllers/AboutController.js"></script>
+    <script src="components/controllers/HomeController.js"></script>
+    <base href="/">
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!--
+        <ng-include src="components/templates/header.html"></ng-include>
+    -->
+    <!-- In production use:
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+    -->
+    <!-- QCC header-->
+    <div id="header">
+        <a class="qccLogo" href="http://www.qcc.cuny.edu/index.html"><img alt="image of the smaller QCC logo"
+                                                                          height="60"
+                                                                          src="http://www.qcc.cuny.edu/_common/images/qccLogoWhite5.png"
+                                                                          width="450"/>
+        </a>
+        <ul id="menu">
+            <li class="toplinks">
+                <a href="http://www.qcc.cuny.edu/publicSafety/index.html" title="link to Public Safety">Public Safety</a>
+            </li>
+            <li class="toplinks">
+                <a href="http://www.qcc.cuny.edu/AZindex.html" title="link to the A to Z Index">A - Z Index</a>
+            </li>
+            <li class="toplinks">
+                <a href="http://www.qcc.cuny.edu/e311/index.html" title="link to the QCC suggestion box">Ask e311</a>
+            </li>
+            <li class="toplinks">
+                <a href="http://www.qcc.cuny.edu/registrar/index.html" title="link to the Registrar home page">Register</a>
+            </li>
+            <li class="toplinks">
+                <a href="http://www.qcc.cuny.edu/directory" title="link to the online directory site">Directory</a>
+            </li>
+            <li class="main-nav-item">
+                <a class="main-nav-tab" href="#">Login&#160;
+                    <img alt="down arrow" height="9" src="http://www.qcc.cuny.edu/_common/images/arrow_px_down2.gif" width="7"/>
+                </a>
+
+                <div class="main-nav-dd">
+                    <div class="main-nav-dd-column">
+                        <a href="https://tigermail.qcc.cuny.edu/" style="float: left;" target="_blank" title="link to TigerMail">TigerMail</a><br/>
+                        <a href="https://qcc-sp.blackboard.com/eaccounts" style="float: left;" target="_blank" title="link to OneCard">OneCard</a><br/> <a href="https://home.cunyfirst.cuny.edu" style="float: left;" target="_blank" title="link to the CUNYfirst log-in page">CUNYfirst</a><br/>
+                        <a href="https://cunyportal.cuny.edu/cpr/authenticate/portal_login.jsp" style="float: left;" target="_blank" title="link to the CUNY Portal / Blackboard log-in page">CUNY Portal</a><br/>
+                        <a href="https://cunyportal.cuny.edu/cpr/authenticate/portal_login.jsp" style="float: left;" target="_blank" title="link to the CUNY Portal / Blackboard log-in page">Blackboard</a><br/>
+                        <a href="http://www.qcc.cuny.edu/eportfolio/index.html" style="float: left;" target="_blank" title="link to the ePortfolio site">ePortfolio</a><br/>
+                        <a href="http://mail.qcc.cuny.edu/" style="float: left;" target="_blank" title="link to Faculty/Staff email">Faculty/Staff eMail</a><br/>
+                        <a href="https://mail.qcc.cuny.edu/pass" style="float: left;" target="_blank" title="link to Faculty/Staff email password reset">Faculty/Staff eMail Password Reset</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <br/>
+        <br/>
+        <div style="text-align:right; display:block; float:right"><br/>
+            <form action="http://www.qcc.cuny.edu/searchResults.html" id="search">
+                <div style="margin-right: 8px; display: inline; vertical-align: bottom;">
+                    <a href="http://www.facebook.com/QueensboroughCUNY" target="_blank" title="link to QCC's facebook page">
+                        <img alt="facebook" height="20" src="http://www.qcc.cuny.edu/_common/images/icons20x20/facebookicon.png" width="20"/>
+                    </a>&#160;
+                    <a href="https://twitter.com/qcc_cuny" target="_blank" title="link to QCC's twitter feed">
+                        <img alt="QCC's twitter feed" height="20" src="http://www.qcc.cuny.edu/_common/images/icons20x20/twitter.png" width="20"/>
+                    </a>&#160;
+                    <a href="http://instagram.com/QCC_CUNY" target="_blank" title="QCC's instragram feed">
+                        <img alt="QCC's instagram feed" height="20" src="http://www.qcc.cuny.edu/_common/images/icons20x20/instagramIcon.png" width="20"/>
+                    </a>&#160;
+                    <a href="https://www.linkedin.com/edu/queensborough-community-college-20267" target="_blank" title="link to QCC's LinkedIn page">
+                        <img alt="linkedIn" height="20" src="http://www.qcc.cuny.edu/_common/images/icons20x20/linkedin.png" width="20"/>
+                    </a>&#160;
+                    <a href="http://www.youtube.com/user/CUNYQueensborough" target="_blank" title="link to QCC's YouTube page">
+                        <img alt="YouTube" height="20" src="http://www.qcc.cuny.edu/_common/images/icons20x20/youtube.png" width="20"/>
+                    </a>
+                </div>
+                <input name="cx" type="hidden" value="002217100447620208891:xpckyeeduya"/>
+                <input name="cof" type="hidden" value="FORID:10"/>
+                <input name="ie" type="hidden" value="UTF-8"/>
+                <input autocomplete="on" id="q" name="q" placeholder="Search all of QCC.cuny.edu" size="30" style="font-size: 14px; vertical-align: top;" type="search"/>
+                <input alt="Search Now" height="20" name="sa" src="http://www.qcc.cuny.edu/_common/images/searchButton2.gif" style="vertical-align: top;" type="image" width="20"/>
+            </form>
+        </div>
+    </div>
+    <!-- end #header -->
+    <div id="navBar">
+        <ul id="menuNav">
+            <li><a href="http://www.qcc.cuny.edu/about/index.html" title="About Queensborough Community College">About Us</a></li>
+            <li><a href="http://www.qcc.cuny.edu/academics/index.html" title="Academics at Queensborough Community College">Academics</a></li>
+            <li><a href="http://www.qcc.cuny.edu/current-students/index.html" title="Information for Current Students">Student Life</a></li>
+            <li><a href="http://www.qcc.cuny.edu/admissions/index.html" title="Information for Future Students">Admissions</a></li>
+            <li><a href="http://www.qcc.cuny.edu/faculty-staff/index.html" title="Information for Faculty and Staff">Faculty&amp; Staff</a></li>
+            <li><a href="http://www.qcc.cuny.edu/alumni-friends/index.html">Alumni &amp; Friends</a></li>
+            <li><a href="http://www.qcc.cuny.edu/give/index.html">Give to QCC</a></li>
+            <li><a href="http://www.qcc.cuny.edu/employment/index.html" title="Jobs at Queensborough Community College">Employment</a>
+            </li>
+        </ul>
+    </div>
+    <!-- end #navBar -->
+    <div ng-view></div>
+</body>
+</html>

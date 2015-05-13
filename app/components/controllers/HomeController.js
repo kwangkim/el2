@@ -5,15 +5,8 @@
 
 'use strict';
 
-angular.module('mostPopularListingsApp.home', ['ngRoute'])
+angular.module('QCC')
 
-// Routing configuration for this module
-.config(['$routeProvider',function($routeprovider){
-	$routeprovider.when('/', {
-		controller: 'HomeController',
-		templateUrl: 'components/views/homeView.html'
-	});
-}])
 
 // Controller definition for this module
 .controller('HomeController', ['$scope', function($scope) {
@@ -28,6 +21,6 @@ angular.module('mostPopularListingsApp.home', ['ngRoute'])
 	
 	};
 
-	this.message = "Hello Home!";
+	$scope.message = "Hello Home!";
 
 }]);

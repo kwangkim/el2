@@ -8,7 +8,7 @@
 angular.module('QCC')
 
 // Controller definition for this module
-.controller('AboutController', ['$scope', function($scope) {
+.controller('LinkController', ['$scope', function($scope) {
 
 	// Just a housekeeping.
 	// In the init method we are declaring all the
@@ -17,9 +17,7 @@ angular.module('QCC')
 	init();
 
 	function init(){
-	
+
 	};
-
 	this.message = "Hello About!";
-
 }]);
